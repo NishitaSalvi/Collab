@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  max-height: 32px ;
+  max-width: 32px;
+}
+.cardimg{
+  max-height: 30px;
+  max-width: 30px;
+}
+
+body{
+  background-color:rgb(9 9 11);
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  backdrop-filter: none; /* Initially no blur */
+}
+
+.navbar.scrolled {
+  background-color: rgba(9, 9, 11, 0.7); /* Dark color with transparency */
+  backdrop-filter: blur(10px); /* Apply blur effect when scrolled */
+}
+
+body.dark {
+  background-color: #09090b;
+  color: white;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
